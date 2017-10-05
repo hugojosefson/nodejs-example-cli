@@ -1,6 +1,5 @@
 {
-  "name": "example-cli",
-  "private": true,
+  "name": "@hugojosefson/example-cli",
   "version": "1.0.0",
   "description": "Example Node.js CLI app.",
   "main": "src/api-commonjs.js",
