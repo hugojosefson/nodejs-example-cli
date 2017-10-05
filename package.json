@@ -30,8 +30,16 @@
     ]
   },
   "repository": "hugojosefson/nodejs-example-cli",
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "node",
+    "nodejs",
+    "cli",
+    "bin",
+    "esmodule",
+    "example",
+    "template"
+  ],
+  "author": "Hugo Josefson <hugo@josefson.org> (https://www.hugojosefson.com/)",
   "license": "ISC",
   "comment-engines.node": "Not using babel, code seems to work from v4.0.0 and up.",
   "engines": {
