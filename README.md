@@ -15,6 +15,22 @@
 
 This is a simple CLI app in Node.js, using ES Modules.
 
+### Using as a template
+
+_To use this project as a template for your own project, you can do this:_
+
+```bash
+mkdir my-cli
+cd my-cli
+git init
+curl https://codeload.github.com/hugojosefson/nodejs-example-cli/tar.gz/master | tar xzv --strip-components=1
+git add --all
+git commit -m 'Add template files from nodejs-example-cli.'
+yarn
+```
+
+_Then edit `package.json` and go on developing!_
+
 ## Prerequisite
 
 Node.js, at least `v4.0.0`.

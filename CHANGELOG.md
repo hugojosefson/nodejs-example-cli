@@ -9,6 +9,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 _New unreleased changes are listed here, and moved down to a release number when released._
 
+### Added
+
+- Instructions for how to use as template for new project.
+
 ## [1.0.2] - 2017-12-08
 
 ### Fixed
