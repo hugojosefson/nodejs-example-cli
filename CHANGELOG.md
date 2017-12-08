@@ -13,6 +13,10 @@ _New unreleased changes are listed here, and moved down to a release number when
 
 - Pin [documentation](https://www.npmjs.com/package/documentation) to `<5.3.3` until [documentation#968](https://github.com/documentationjs/documentation/pull/968) is resolved.
 
+### Added
+
+- More tests.
+
 ## [1.0.1] - 2017-10-05
 
 ### Added
