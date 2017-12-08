@@ -1436,7 +1436,7 @@ doctrine@^2.0.0:
     esutils "^2.0.2"
     isarray "^1.0.0"
 
-documentation@^5.3.2:
+"documentation@^5.3.2 <5.3.3":
   version "5.3.2"
   resolved "https://registry.yarnpkg.com/documentation/-/documentation-5.3.2.tgz#45a106cd58bcb74ec0446431e5777a063fab6731"
   dependencies:
