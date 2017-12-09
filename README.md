@@ -1,5 +1,7 @@
 # Node.js example CLI app
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/hugojosefson/nodejs-example-cli.svg)](https://greenkeeper.io/)
+
 [![Build Status](https://travis-ci.org/hugojosefson/nodejs-example-cli.svg?branch=master)](https://travis-ci.org/hugojosefson/nodejs-example-cli)
 [![npm page](https://img.shields.io/npm/v/@hugojosefson/example-cli.svg)](https://npmjs.com/package/@hugojosefson/example-cli)
 [![License ISC](https://img.shields.io/npm/l/@hugojosefson/example-cli.svg)](https://tldrlegal.com/license/-isc-license)
