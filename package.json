@@ -48,8 +48,14 @@
   "@std/esm": {
     "cjs": true
   },
+  "standard": {
+    "parser": "babel-eslint",
+    "plugins": ["flowtype"]
+  },
   "devDependencies": {
+    "babel-eslint": "^8.0.3",
     "documentation": "^5.3.2 <5.3.3",
+    "eslint-plugin-flowtype": "^2.39.1",
     "husky": "^0.14.3",
     "lint-staged": "^6.0.0",
     "mocha": "^4.0.1",
