@@ -6,11 +6,6 @@
 [![SemVer 2.0.0](https://img.shields.io/badge/SemVer-2.0.0-lightgrey.svg)](http://semver.org/spec/v2.0.0.html)
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
-[![Waffle.io](https://img.shields.io/waffle/label/hugojosefson/nodejs-example-cli/inbox.svg)](https://waffle.io/hugojosefson/nodejs-example-cli)
-[![Waffle.io](https://img.shields.io/waffle/label/hugojosefson/nodejs-example-cli/to%20do.svg)](https://waffle.io/hugojosefson/nodejs-example-cli)
-[![Waffle.io](https://img.shields.io/waffle/label/hugojosefson/nodejs-example-cli/in%20progress.svg)](https://waffle.io/hugojosefson/nodejs-example-cli)
-[![Waffle.io](https://img.shields.io/waffle/label/hugojosefson/nodejs-example-cli/done.svg)](https://waffle.io/hugojosefson/nodejs-example-cli)
-
 ## Introduction
 
 This is a simple CLI app in Node.js, using ES Modules.
