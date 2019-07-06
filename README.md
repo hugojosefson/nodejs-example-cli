@@ -3,7 +3,7 @@
 [![Build Status](https://travis-ci.org/hugojosefson/nodejs-example-cli.svg?branch=master)](https://travis-ci.org/hugojosefson/nodejs-example-cli)
 [![npm page](https://img.shields.io/npm/v/@hugojosefson/example-cli.svg)](https://npmjs.com/package/@hugojosefson/example-cli)
 [![License ISC](https://img.shields.io/npm/l/@hugojosefson/example-cli.svg)](https://tldrlegal.com/license/-isc-license)
-[![SemVer 2.0.0](https://img.shields.io/badge/SemVer-2.0.0-lightgrey.svg)](http://semver.org/spec/v2.0.0.html)
+[![SemVer 2.0.0](https://img.shields.io/badge/SemVer-2.0.0-lightgrey.svg)](https://semver.org/spec/v2.0.0.html)
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## Introduction
@@ -28,7 +28,7 @@ _Then edit `package.json` and go on developing!_
 
 ## Prerequisite
 
-Node.js, at least `v4.0.0`.
+Node.js, at least `v12.0.0`.
 
 Recommended to install latest via [nvm](https://github.com/creationix/nvm#readme):
 
@@ -36,23 +36,17 @@ Recommended to install latest via [nvm](https://github.com/creationix/nvm#readme
 nvm install stable
 ```
 
-## Installation
-
-```bash
-npm install -g @hugojosefson/example-cli
-```
-
 ## Usage
 
 ```bash
-example-cli "Your Name"
+npx --package @hugojosefson/example-cli example-cli "Your Name"
 ```
 
 Will say hello to you.
 
 ## Programmatic access
 
-You can also `import` or `require` the module, and use its exported functions programmatically.
+You can also `import` the module, and use its exported functions programmatically.
 
 ### API
 

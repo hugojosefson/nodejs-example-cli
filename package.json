@@ -2,24 +2,24 @@
   "name": "@hugojosefson/example-cli",
   "version": "1.0.2",
   "description": "Example Node.js CLI app.",
-  "main": "src/api-commonjs.js",
-  "module": "src/api.mjs",
+  "type": "module",
+  "main": "src/api.js",
   "files": [
     "bin",
     "src"
   ],
   "bin": {
-    "example-cli": "bin/example-cli.js"
+    "example-cli": "bin/example-cli"
   },
   "scripts": {
-    "start": "bin/example-cli.js You",
+    "start": "bin/example-cli You",
     "test": "run-s lint mocha",
-    "mocha": "mocha --require @std/esm 'test/**/*-test.{m,}js'",
-    "mocha-watch": "mocha --watch --require @std/esm 'test/**/*-test.{m,}js'",
+    "mocha": "mjs-mocha --es-module-specifier-resolution=node",
+    "mocha-watch": "mjs-mocha --es-module-specifier-resolution=node --watch",
     "lint": "standard",
     "lint-fix": "standard --fix",
     "prepare": "run-s documentation",
-    "documentation": "documentation readme --section=API --shallow --format=md src/api.mjs",
+    "documentation": "documentation readme --section=API --shallow --format=md src/api.js",
     "precommit": "lint-staged"
   },
   "lint-staged": {
@@ -40,24 +40,17 @@
   ],
   "author": "Hugo Josefson <hugo@josefson.org> (https://www.hugojosefson.com/)",
   "license": "ISC",
-  "comment-engines.node": "Not using babel, code seems to work from v4.0.0 and up.",
   "engines": {
-    "node": ">=4.0.0"
-  },
-  "comment-@std/esm.cjs": "Allow destructuring import from common-js modules.",
-  "@std/esm": {
-    "cjs": true
+    "node": ">=12.0.0"
   },
   "devDependencies": {
-    "documentation": "^9.1.1",
-    "husky": "^1.2.1",
-    "lint-staged": "^8.1.0",
-    "mocha": "^5.2.0",
+    "documentation": "^11.0.1",
+    "husky": "^3.0.0",
+    "lint-staged": "^9.1.0",
+    "mjs-mocha": "^3.0.0",
+    "mocha": "^6.1.4",
     "npm-run-all": "^4.1.5",
     "standard": "^12.0.1"
   },
-  "dependencies": {
-    "engine-check": "^1.0.1",
-    "esm": "^3.0.84"
-  }
+  "dependencies": {}
 }

@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+PKG_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )/.." >/dev/null 2>&1 && pwd )"
+
+node \
+  --experimental-modules \
+  --es-module-specifier-resolution=node \
+  "${PKG_DIR}/src/cli" \
+  "$@"
