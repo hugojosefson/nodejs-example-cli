@@ -9,14 +9,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 _New unreleased changes are listed here, and moved down to a release number when released._
 
-### Added
-
-- Instructions for how to use as template for new project.
+## [2.0.0] - 2019-07-06
 
 ### Changed
 
 - **BREAKING:** Require Node.js >=12.
 - Usage instructions with `npx`.
+
+### Added
+
+- Instructions for how to use as template for new project.
 
 ## [1.0.2] - 2017-12-08
 
