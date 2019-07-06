@@ -39,7 +39,7 @@
     "template"
   ],
   "author": "Hugo Josefson <hugo@josefson.org> (https://www.hugojosefson.com/)",
-  "license": "ISC",
+  "license": "MIT",
   "engines": {
     "node": ">=12.0.0"
   },

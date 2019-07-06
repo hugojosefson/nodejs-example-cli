@@ -9,6 +9,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 _New unreleased changes are listed here, and moved down to a release number when released._
 
+## [2.0.1] - 2019-07-06
+
+### Changed
+
+- Fix realpath using https://github.com/mkropat/sh-realpath
+- Change license to MIT.
+
 ## [2.0.0] - 2019-07-06
 
 ### Changed
