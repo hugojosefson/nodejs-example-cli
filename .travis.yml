@@ -5,6 +5,8 @@ sudo: false
 node_js:
   - "12.0.0"
   - "12"
+  - "13.0.0"
+  - "13"
   - "stable"
 
 cache:
