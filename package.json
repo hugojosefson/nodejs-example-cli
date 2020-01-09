@@ -44,7 +44,7 @@
   },
   "devDependencies": {
     "documentation": "^12.1.3",
-    "husky": "^3.0.0",
+    "husky": "^4.0.2",
     "lint-staged": "^9.1.0",
     "mjs-mocha": "^3.0.0",
     "mocha": "^6.1.4",
