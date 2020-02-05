@@ -23,8 +23,7 @@
   },
   "lint-staged": {
     "*.{mjs,js,jsx}": [
-      "standard --fix",
-      "git add"
+      "standard --fix"
     ]
   },
   "repository": "hugojosefson/nodejs-example-cli",
@@ -43,11 +42,11 @@
     "node": ">=12.0.0"
   },
   "devDependencies": {
-    "documentation": "^12.1.3",
+    "documentation": "^12.1.4",
     "esm": "^3.2.25",
-    "husky": "^3.0.0",
-    "lint-staged": "^9.1.0",
-    "mocha": "^6.1.4",
+    "husky": "^4.2.1",
+    "lint-staged": "^10.0.7",
+    "mocha": "^7.0.1",
     "npm-run-all": "^4.1.5",
     "standard": "^14.3.1"
   },
