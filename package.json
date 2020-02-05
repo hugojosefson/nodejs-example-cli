@@ -14,8 +14,8 @@
   "scripts": {
     "start": "bin/example-cli You",
     "test": "run-s lint mocha",
-    "mocha": "mjs-mocha --es-module-specifier-resolution=node",
-    "mocha-watch": "mjs-mocha --es-module-specifier-resolution=node --watch",
+    "mocha": "mocha -r esm",
+    "mocha-watch": "mocha -r esm --watch",
     "lint": "standard",
     "lint-fix": "standard --fix",
     "prepare": "run-s documentation",
@@ -44,9 +44,9 @@
   },
   "devDependencies": {
     "documentation": "^12.1.3",
+    "esm": "^3.2.25",
     "husky": "^3.0.0",
     "lint-staged": "^9.1.0",
-    "mjs-mocha": "^3.0.0",
     "mocha": "^6.1.4",
     "npm-run-all": "^4.1.5",
     "standard": "^14.3.1"
