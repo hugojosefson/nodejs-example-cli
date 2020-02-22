@@ -9,6 +9,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 _New unreleased changes are listed here, and moved down to a release number when released._
 
+### Changed
+
+- Remove `realpath`, because it's not needed for this.
+
 ## [2.1.1] - 2020-02-05
 
 ### Fixed
