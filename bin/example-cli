@@ -1,9 +1,6 @@
 #!/usr/bin/env bash
+pkg_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")"/.. && pwd)"
+node_args="--experimental-modules --experimental-specifier-resolution=node"
+no_warn() { grep -v "ESM module loader is experimental"; }
 
-PKG_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")"/.. && pwd)"
-
-node \
-  --experimental-modules \
-  --es-module-specifier-resolution=node \
-  "${PKG_DIR}/src/cli" \
-  "$@"
+exec /usr/bin/env node ${node_args} "${pkg_dir}/src/cli" "$@" 2> >(no_warn >&2) > >(no_warn)
