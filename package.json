@@ -2,17 +2,15 @@
   "name": "@hugojosefson/example-cli",
   "version": "3.0.0",
   "description": "Example Node.js CLI app.",
-  "type": "module",
-  "main": "src/api.js",
+  "module": "src/api.mjs",
   "files": [
-    "bin",
     "src"
   ],
   "bin": {
-    "example-cli": "bin/example-cli"
+    "example-cli": "src/cli.mjs"
   },
   "scripts": {
-    "start": "bin/example-cli You",
+    "start": "src/cli.mjs You",
     "test": "run-s lint mocha",
     "mocha": "mocha",
     "lint": "standard --fix",

@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import { basename } from 'path'
 import { generateGreeting, identity } from './api.mjs'
 
