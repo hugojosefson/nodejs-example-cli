@@ -1,6 +1,6 @@
 {
   "name": "@hugojosefson/example-cli",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "Example Node.js CLI app.",
   "module": "src/api.mjs",
   "files": [
