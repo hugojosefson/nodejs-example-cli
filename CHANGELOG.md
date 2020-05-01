@@ -7,7 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [3.0.0] - 2020-04-02
+
 _New unreleased changes are listed here, and moved down to a release number when released._
+
+### Changed
+
+- **BREAKING:** Require Node.js >=13.2.0.
 
 ### Changed
 

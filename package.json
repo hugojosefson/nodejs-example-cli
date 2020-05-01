@@ -13,13 +13,11 @@
   },
   "scripts": {
     "start": "bin/example-cli You",
-    "test": "run-s lint set-commonjs mocha; run-s set-module",
-    "mocha": "mocha -r esm",
-    "lint": "standard",
+    "test": "run-s lint mocha",
+    "mocha": "mocha",
+    "lint": "standard --fix",
     "prepare": "run-s documentation",
-    "documentation": "documentation readme --section=API --shallow --format=md src/api.js",
-    "set-commonjs": "replace '\"type\": \"module\"' '\"type\": \"commonjs\"' package.json",
-    "set-module": "replace '\"type\": \"commonjs\"' '\"type\": \"module\"' package.json"
+    "documentation": "documentation readme --section=API --shallow --format=md src/api.mjs"
   },
   "lint-staged": {
     "*.{mjs,js,jsx}": [
@@ -39,17 +37,15 @@
   "author": "Hugo Josefson <hugo@josefson.org> (https://www.hugojosefson.com/)",
   "license": "MIT",
   "engines": {
-    "node": ">=12.0.0"
+    "node": ">=13.2.0"
   },
   "devDependencies": {
-    "documentation": "^12.1.4",
-    "esm": "^3.2.25",
-    "husky": "^4.2.3",
-    "lint-staged": "^10.0.7",
-    "mocha": "^7.0.1",
+    "documentation": "^12.3.0",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.2",
+    "mocha": "^7.1.2",
     "npm-run-all": "^4.1.5",
-    "replace": "^1.1.5",
-    "standard": "^14.3.1"
+    "standard": "^14.3.3"
   },
   "dependencies": {},
   "husky": {

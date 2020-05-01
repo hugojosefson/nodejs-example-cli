@@ -1,13 +1,8 @@
 language: node_js
 
-sudo: false
-
 node_js:
-  - "12.0.0"
-  - "12"
-  - "13.0.0"
+  - "13.2.0"
   - "13"
+  - "14.0.0"
+  - "14"
   - "stable"
-
-cache:
-  yarn: true

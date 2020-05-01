@@ -5,7 +5,7 @@
  * @returns {Promise.<String>} A Promise of a greeting.
  * @name generateGreeting
  */
-export { default as generateGreeting } from './generate-greeting'
+export { default as generateGreeting } from './generate-greeting.mjs'
 
 /**
  * Returns the supplied argument.
@@ -14,4 +14,4 @@ export { default as generateGreeting } from './generate-greeting'
  * @returns {*} The argument a.
  * @name identity
  */
-export { default as identity } from './identity'
+export { default as identity } from './identity.mjs'

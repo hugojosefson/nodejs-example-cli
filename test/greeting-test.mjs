@@ -1,7 +1,7 @@
 /* eslint-env mocha */
 
 import assert from 'assert'
-import { generateGreeting } from '../src/api'
+import { generateGreeting } from '../src/api.mjs'
 
 describe('generateGreeting', () => {
   it('should throw an Error when called without argument', () => {

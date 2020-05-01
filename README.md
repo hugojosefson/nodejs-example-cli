@@ -12,7 +12,8 @@ This is a simple CLI app in Node.js, using ES Modules.
 
 ### Using as a template
 
-_To use this project as a template for your own project, you can do this:_
+_To use this project as a template for your own project, you can do
+this:_
 
 ```bash
 mkdir my-cli
@@ -28,9 +29,10 @@ _Then edit `package.json` and go on developing!_
 
 ## Prerequisite
 
-Node.js, at least `v12.0.0`.
+Node.js, `v13.2.0` or higher, ideally at least `v14.0.0`.
 
-Recommended to install latest via [nvm](https://github.com/creationix/nvm#readme):
+Recommended to install latest via
+[nvm](https://github.com/nvm-sh/nvm#readme):
 
 ```bash
 nvm install stable
@@ -46,7 +48,8 @@ Will say hello to you.
 
 ## Programmatic access
 
-You can also `import` the module, and use its exported functions programmatically.
+You can also `import` the module, and use its exported functions
+programmatically.
 
 ### API
 

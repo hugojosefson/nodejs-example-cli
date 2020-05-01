@@ -1,5 +1,5 @@
 import { basename } from 'path'
-import { generateGreeting, identity } from './api'
+import { generateGreeting, identity } from './api.mjs'
 
 if (process.argv.length !== 3) {
   console.error(`Usage: ${basename(process.argv[1])} <Your name>`)
