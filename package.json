@@ -38,7 +38,7 @@
     "node": ">=13.2.0"
   },
   "devDependencies": {
-    "documentation": "^12.3.0",
+    "documentation": "^13.0.0",
     "husky": "^4.2.5",
     "lint-staged": "^10.2.2",
     "mocha": "^7.1.2",
