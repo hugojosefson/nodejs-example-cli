@@ -6,6 +6,3 @@ node_js:
   - "14.0.0"
   - "14"
   - "stable"
-
-after_script:
-  - "yarn coveralls"

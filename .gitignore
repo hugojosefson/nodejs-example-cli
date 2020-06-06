@@ -1,6 +1,5 @@
 /node_modules/
 /cjs/
-/.nyc_output/
 /*.log
 /*.tgz
 .*.swp
