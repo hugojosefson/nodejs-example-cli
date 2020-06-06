@@ -24,6 +24,24 @@ git commit -m 'Add template files from nodejs-example-cli.'
 yarn
 ```
 
+_You may wish to make it more your own project:_
+
+```bash
+export NPM_NAME='@xxxx/yyyy'     # replace with your project's npm name
+export GITHUB_REPO='xxxx/yyyy'   # replace with your project's github repo
+
+rm CHANGELOG.md
+npx replace '^#+ Using as a template[^#]*'    ''                   README.md
+npx replace '"version": "[^"]+"'              '"version": "0.0.1"' package.json
+npx replace '"description": "[^"]+"'          '"description": ""'  package.json
+npx replace '"author": "[^"]+"'               '"author": ""'       package.json
+npx replace '@hugojosefson/example-cli'       "${NPM_NAME}"        . --recursive
+npx replace 'hugojosefson/nodejs-example-cli' "${GITHUB_REPO}"     . --recursive
+
+git add --all
+git commit -m "Rename project to ${NPM_NAME}."
+```
+
 _Then edit `package.json` and go on developing!_
 
 ## Prerequisite
