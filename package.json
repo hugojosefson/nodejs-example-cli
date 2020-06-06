@@ -21,7 +21,7 @@
     "build-cjs": "rollup src/index.mjs --file cjs/index.js --format cjs --external fs --exports named --outro 'if(exports.default){Object.assign(exports.default,exports);module.exports=exports.default}'",
     "lint": "prettier --write 'src/**/*.{js,mjs,md}' './*.{js,mjs,md}'",
     "lint-readme": "prettier --write README.md",
-    "documentation": "documentation readme --markdown-toc=false --access=public --resolve=node --quiet --shallow --format=md --section=API src/index.mjs",
+    "documentation": "documentation readme --markdown-toc=false --document-exported --quiet --resolve=node --shallow --format=md --section=API src/index.mjs",
     "test": "npm-run-all lint documentation lint-readme mocha",
     "mocha": "mocha",
     "npm-audit": "npm install --package-lock-only && npm audit; rm package-lock.json"
