@@ -1,20 +1,14 @@
 #!/usr/bin/env node
 
-import { basename } from 'path'
-import { generateGreeting, identity } from './api.mjs'
+import yargs from 'yargs'
+import termSize from 'term-size'
+import { generateGreeting, identity } from './index.mjs'
+import greet from './yargs-commands/greet.mjs'
 
-if (process.argv.length !== 3) {
-  console.error(`Usage: ${basename(process.argv[1])} <Your name>`)
-  process.exit(1)
-}
-
-const whom = process.argv[2]
-
-generateGreeting(whom)
-  .then(identity)
-  .then(greeting => console.log(greeting))
-  .then(() => console.log('Done.'))
-  .catch(err => {
-    console.error('Caught error:', err.stack)
-    process.exit(1)
-  })
+yargs
+  .strict()
+  .command(greet({ generateGreeting, identity }))
+  .demandCommand(1)
+  .help()
+  .wrap(termSize().columns)
+  .parse()

@@ -3,11 +3,13 @@
 All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0)
-and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+and this project adheres to
+[Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
-_New unreleased changes are listed here, and moved down to a release number when released._
+_New unreleased changes are listed here, and moved down to a release number when
+released._
 
 ## [3.0.0] - 2020-04-02
 
@@ -23,7 +25,9 @@ _New unreleased changes are listed here, and moved down to a release number when
 
 ### Fixed
 
-- Use [esm](https://www.npmjs.com/package/esm) instead of [mjs-mocha](https://www.npmjs.com/package/mjs-mocha) because some version of Node.js 13.x broke `mjs-mocha`.
+- Use [esm](https://www.npmjs.com/package/esm) instead of
+  [mjs-mocha](https://www.npmjs.com/package/mjs-mocha) because some version of
+  Node.js 13.x broke `mjs-mocha`.
 
 ### Changed
 
@@ -51,7 +55,10 @@ _New unreleased changes are listed here, and moved down to a release number when
 
 ### Fixed
 
-- Pin [documentation](https://www.npmjs.com/package/documentation) to `<5.3.3` until [documentation#968](https://github.com/documentationjs/documentation/pull/968) is resolved.
+- Pin [documentation](https://www.npmjs.com/package/documentation) to `<5.3.3`
+  until
+  [documentation#968](https://github.com/documentationjs/documentation/pull/968)
+  is resolved.
 
 ### Added
 
@@ -62,6 +69,8 @@ _New unreleased changes are listed here, and moved down to a release number when
 ### Added
 
 - Hello World example code.
-- Use [@std/esm](https://www.npmjs.com/package/@std/esm) for ES Module loading. Requires `node@>=4`.
+- Use [@std/esm](https://www.npmjs.com/package/@std/esm) for ES Module loading.
+  Requires `node@>=4`.
 - Connect to [Travis-CI](https://travis-ci.org/hugojosefson/nodejs-example-cli).
-- Publish on npm as [@hugojosefson/example-cli](https://npmjs.com/package/@hugojosefson/example-cli).
+- Publish on npm as
+  [@hugojosefson/example-cli](https://npmjs.com/package/@hugojosefson/example-cli).
