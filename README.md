@@ -27,16 +27,20 @@ yarn
 _You may wish to make it more your own project:_
 
 ```bash
-export NPM_NAME='@xxxx/yyyy'     # replace with your project's npm name
 export GITHUB_REPO='xxxx/yyyy'   # replace with your project's github repo
+export BIN_NAME='yyyy'           # replace with name of main binary
+export NPM_NAME='@xxxx/yyyy'     # optional: your project's npm name
 
+npx replace '"version": "[^"]+"'              '"version": "0.0.1"'       package.json
+npx replace '"description": "[^"]+"'          '"description": ""'        package.json
+npx replace '"author": "[^"]+"'               '"author": ""'             package.json
+npx replace '@hugojosefson/example-cli'       "${NPM_NAME:-${BIN_NAME}}" . --recursive
+npx replace 'hugojosefson/nodejs-example-cli' "${GITHUB_REPO}"           . --recursive
+npx replace 'example-cli'                     "${BIN_NAME}"              . --recursive
+npx replace '^#+ Using as [\S\s]+(## P(re)+)' '$1'                       README.md
+npx replace '"keywords":[^\]]*\][^"]*'        ''                         package.json
 rm CHANGELOG.md
-npx replace '^#+ Using as a template[^#]*'    ''                   README.md
-npx replace '"version": "[^"]+"'              '"version": "0.0.1"' package.json
-npx replace '"description": "[^"]+"'          '"description": ""'  package.json
-npx replace '"author": "[^"]+"'               '"author": ""'       package.json
-npx replace '@hugojosefson/example-cli'       "${NPM_NAME}"        . --recursive
-npx replace 'hugojosefson/nodejs-example-cli' "${GITHUB_REPO}"     . --recursive
+yarn
 
 git add --all
 git commit -m "Rename project to ${NPM_NAME}."
